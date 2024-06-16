@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+       
+        .form-container {
+            background-color: #fff;
+            width: 500px;
+            height: auto;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-left: 100px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        
+        .input {
+            max-width: 100%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 1.5px solid #000;
+            border-radius: 0.5rem;
+            box-shadow: 2.5px 3px 0 #000;
+            outline: none;
+            transition: ease 0.25s;
+            display: block;
+            margin: auto;
+        }
+
+        .input:focus {
+            box-shadow: 5.5px 7px 0 black;
+        }
+
+        
+        .submit-btn,
+        .main-page-btn {
+            padding: 0.875rem;
+            font-size: 1rem;
+            border: 1.5px solid #000;
+            border-radius: 0.5rem;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 2.5px 3px 0 #000;
+            transition: ease 0.25s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover,
+        .submit-btn:focus,
+        .main-page-btn:hover,
+        .main-page-btn:focus {
+            box-shadow: 5.5px 7px 0 black;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="registration-form" action="/register" method="POST">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" placeholder="Email address" class="input" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" placeholder="Username" class="input" name="username" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" placeholder="Password" class="input" name="password" type="password" required />
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" placeholder="Confirm Password" class="input" name="confirm-password"
+                    type="password" required />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Register</button>
+            </div>
+        </form>
+        <div class="form-group">
+            <button class="main-page-btn"><a href="./index.html">Go To Main Page</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

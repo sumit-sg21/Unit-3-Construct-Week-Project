@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conferencing</title>
+    <script src="https://kit.fontawesome.com/abc5352ddd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style1.css">
+    <style>
+        #backgroundcolor {
+            margin-top: 100px;
+            padding-bottom: 120px;
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        #h1 {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            line-height: 48px;
+            margin-bottom: 20px;
+
+        }
+
+        .firstp {
+            color: rgb(255, 255, 255);
+            width: 464px;
+            height: 120px;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: normal;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        #secimg {
+            width: 439px;
+            height: 442px;
+            border-radius: 30px;
+        }
+
+        #secfirstdiv {
+            display: inline-block;
+            border-radius: 16px;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 36px;
+            padding-right: 36px;
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            place-content: center;
+            place-items: center;
+
+        }
+
+        #secfirstdiv:hover {
+            transform: translateX(60px) scale(1.1);
+            transition: transform 0.7s ease;
+        }
+
+        #number {
+            color: rgb(0, 172, 168);
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        #number2 {
+            color: rgb(240, 90, 44);
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        #number3 {
+            color: rgb(101, 77, 160);
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        #secseconddiv {
+            display: inline-block;
+            border-radius: 16px;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 36px;
+            padding-right: 36px;
+            position: absolute;
+            top: 30px;
+            left: 320px;
+
+        }
+
+        #secseconddiv:hover {
+            transform: translateX(-45px) scale(1.1);
+            transition: transform 0.7s ease;
+        }
+
+        #secthirddiv {
+            display: inline-block;
+            border-radius: 16px;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            position: absolute;
+            top: 380px;
+            left: 170px;
+
+        }
+
+        #secthirddiv:hover {
+            transform: translateY(-45px) scale(1.1);
+            transition: transform 0.7s ease;
+        }
+
+        .secone {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #position {
+            position: relative;
+        }
+
+        #title {
+            color: rgb(12, 20, 57);
+            font-size: 45px;
+            font-weight: 900;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .box2 {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            height: auto;
+            width: 300px;
+            border-radius: 30px;
+            text-align: center;
+            padding-bottom: 30px;
+            overflow: hidden;
+            position: relative;
+            color: white;
+            padding: 14px;
+            background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+
+        }
+
+
+        .h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .oneplaceimg {
+            width: 100%;
+            border-radius: 30px;
+
+        }
+
+        .oneplace {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+
+        .oneplaceimg:hover {
+            transform: scale(1.11);
+            transition: transform 0.5s ease;
+        }
+
+        .box4 {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+        }
+
+        .box3 {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-content: center;
+        }
+
+        #thirdimg {
+            width: 720px;
+            height: 385px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #thirddiv {
+            width: 345px;
+            height: 385px;
+            background-color: rgb(203, 25, 119);
+            color: white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+        }
+
+        .newsp {
+            font-size: 35px;
+            font-weight: 800;
+            color: white;
+            margin-top: 32px;
+            margin-bottom: 15px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        .newsp2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 32px;
+            color: white;
+            padding-bottom: 32px;
+        }
+
+        #fifth {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin-bottom: 100px;
+        }
+
+        #sixth {
+            width: 1190px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 80px;
+        }
+
+        #input3 {
+            color: white;
+            width: 500px;
+            font-size: 40px;
+            font-weight: 800;
+            margin-top: 100px;
+        }
+
+        #input1 {
+            box-sizing: border-box;
+            width: 420px;
+            height: 47px;
+            display: block;
+            border-radius: 8px;
+            border: none;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            padding-left: 10px;
+        }
+
+        #input2 {
+            box-sizing: border-box;
+            width: 420px;
+            height: 47px;
+            display: block;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 30px;
+            padding-left: 10px;
+        }
+
+
+        button {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease-in;
+            z-index: 1;
+        }
+
+        button::before,
+        button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 100%;
+            transform: skew(15deg);
+            transition: all 0.7s;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        button::before {
+            left: -10px;
+            background: #240046;
+        }
+
+        button::after {
+            right: -10px;
+            background: #5a189a;
+        }
+
+        button:hover::before,
+        button:hover::after {
+            width: 58%;
+        }
+
+        button:hover span {
+            color: #e0aaff;
+            transition: 0.3s;
+        }
+
+        button span {
+            color: #03045e;
+            font-size: 18px;
+            transition: all 0.3s ease-in;
+        }
+
+        #navlogo {
+            width: 130px;
+            height: 60px;
+            border-radius: 10px;
+            border: 2px solid white;
+
+        }
+
+        #flex5 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(196, 193, 193, 0.884);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            z-index: 1000;
+            font-weight: 700;
+        }
+
+        .onea+div>div {
+            border: 1px solid rgb(0,34,102);
+            padding: 10px;
+        }
+
+        a {
+
+            text-decoration: none;
+            color: rgb(0,34,102);
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .onea>div:hover {
+            transform: scale(1.2);
+            transition: transform 0.5s ease;
+
+        }
+
+        .onea+div>div:hover {
+
+            transform: scale(1.2);
+            transition: transform 0.5s ease;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 80px;
+            
+        }
+
+        /* Card styling */
+        .timercard {
+            background-color: #fff;
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .timercard:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 1.5px solid #000;
+            border-radius: 0.5rem;
+            box-shadow: 2.5px 3px 0 #000;
+            overflow: hidden;
+        }
+
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-back {
+            color: black;
+            transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .card-back h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        .card-back p {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .countdown {
+            font-weight: bold;
+            color: red;
+            margin-top: 10px;
+            font-size: 35px;
+        }
+
+        #great{
+            font-size: 50px;
+            margin-top: 150px;
+            text-align: center;
+            font-weight: 700;
+            color: rgb(63,46,136);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div id="flex5">
+                    <div><a href="./index.html" target="_blank"><img id="navlogo" src="./Apple.png" alt=""></a></div>
+                    <div class="onea" style="display: flex; gap: 30px; margin-left: 100px;">
+                        <div class="hovera"><a href=""><span>Meetings</span></a></div>
+                        <div><a href="">Solutions</a></div>
+                        <div><a href="">Products</a></div>
+                        <div><a href="">Resources</a></div>
+                    </div>
+                    <div style="display: flex; gap: 20px;">
+                        <div><a href="./login.html">LOGIN</a></div>
+                        <div><a href="./register.html">SIGN UP</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="great">Web conferences to be hosted at:</div>
+        </div>
+    </section>
+
+    <section id="countdowntimer">
+        <div class="cards-container">
+            <div class="timercard">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./Indian flag.jpg" alt="Conference Room 1">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 1</h3>
+                        <p>Topic: Future of AI</p>
+                        <p>Location: INDIA</p>
+                        <p>Start Time: June 30, 2024, 10:00 AM</p>
+                        <p class="countdown" id="countdown1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timercard" data-start-time="2024-07-01T14:00:00">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./china.jpg" alt="Conference Room 2">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 2</h3>
+                        <p>Topic: Cybersecurity Trends</p>
+                        <p>Location: CHINA</p>
+                        <p>Start Time: July 1, 2024, 2:00 PM</p>
+                        <p class="countdown" id="countdown2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timercard" data-start-time="2024-07-05T09:00:00">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./france.jpg" alt="Conference Room 3">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 3</h3>
+                        <p>Topic: Cloud Computing Advances</p>
+                        <p>Location: FRANCE</p>
+                        <p>Start Time: July 5, 2024, 9:00 AM</p>
+                        <p class="countdown" id="countdown3"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timercard" data-start-time="2024-07-10T11:00:00">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./saudi flag.jpg" alt="Conference Room 4">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 4</h3>
+                        <p>Topic: Blockchain Technology</p>
+                        <p>Location: SAUDI ARABIA</p>
+                        <p>Start Time: July 10, 2024, 11:00 AM</p>
+                        <p class="countdown" id="countdown4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timercard" data-start-time="2024-07-15T15:00:00">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./Usa flag.jpg" alt="Conference Room 5">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 5</h3>
+                        <p>Topic: Big Data Analytics</p>
+                        <p>Location: USA</p>
+                        <p>Start Time: July 15, 2024, 3:00 PM</p>
+                        <p class="countdown" id="countdown5"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timercard" data-start-time="2024-07-20T12:00:00">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./canada flag.jpg" alt="Conference Room 6">
+                    </div>
+                    <div class="card-back">
+                        <h3>Web Conference 6</h3>
+                        <p>Topic: Machine Learning</p>
+                        <p>Location: CANADA</p>
+                        <p>Start Time: July 20, 2024, 12:00 PM</p>
+                        <p class="countdown" id="countdown6"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background-color:rgb(12, 20, 57);">
+        <div class="container">
+            <div id="backgroundcolor">
+                <div>
+                    <h1 id="h1">What is Web Summit?</h1>
+                    <p class="firstp">Politico has said we run “the world’s premier tech conference”, the Atlantic that
+                        Web Summit is “where the future goes to be born”, and the New York Times that we assemble “a
+                        grand conclave of the tech industry’s high priests”.</p>
+                    <p class="firstp">At a time of great uncertainty for many industries and, indeed, the world itself,
+                        we gather policymakers, heads of state, and the founders and CEOs of technology companies and
+                        fast-growing startups, to ask a simple question: Where to next?</p>
+                </div>
+                <div id="position">
+                    <img id="secimg"
+                        src="https://websummit.com/wp-media/2023/11/opening-night-of-Web-Summit-2023-at-the-Altice-Arena-in-Lisbon-Portugal-768x489.jpg"
+                        alt="websummit">
+                    <div id="secfirstdiv">
+                        <p id="number">70,000+</p>
+                        <p class="secone">attendees</p>
+                    </div>
+                    <div id="secseconddiv">
+                        <p id="number2">900+</p>
+                        <p class="secone">investors</p>
+                    </div>
+                    <div id="secthirddiv">
+                        <p id="number3">2600+</p>
+                        <p class="secone">startups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="gradient">
+                <div id="title">Meet Our First Speakers</div>
+            </div>
+            <div class="oneplace">
+                <div class="box2">
+                    <a href="./applicants.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/88607ca35579df717357dbb33cf88305b319f794.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Brad Smith</p>
+                    <p>President & Vice Chair</p>
+                    <p>Microsoft</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicant2.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/b8495f0fe3bdeb89ff1d653122dc57023720dbce.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Jessica Shibely</p>
+                    <p>CEO</p>
+                    <p>TIME</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicants3.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/f170f3de3c474336558fdaa1ab44798a42f16ad9.jpg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Cristiano Amon</p>
+                    <p>CEO & President</p>
+                    <p>Microsoft</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="oneplace" style="margin-bottom: 50px;">
+                <div class="box2">
+                    <a href="./applicant4.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/a8a0bdf1fc272003d98721d9f6e605e4765c18ee.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Deborah Archer</p>
+                    <p>CEO</p>
+                    <p>ACLU</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicant5.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/63c03a0535b734f8ed2f078c828ccc3bafbdf736.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Hovanayesh Avoyan</p>
+                    <p>Founder & CEO</p>
+                    <p>Picsart</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicant6.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/52e9943600761a1ea310a46cdd9b86f363c2daa5.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Jonathan Ross</p>
+                    <p>Founder & CEO</p>
+                    <p>Groq</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="oneplace" style="margin-bottom: 100px;">
+                <div class="box2">
+                    <a href="./applicant7.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/41aa7b2ea0ac44d477b5731d6d0a1ffc9d792f88.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Nick Thompson</p>
+                    <p>CEO</p>
+                    <p>The Atlantic</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicant8.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/dc92f40eda0b707a9aed6bd295e388de27e76378.jpg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Toma Sabaliauskienė</p>
+                    <p>CMO</p>
+                    <p>Nord VPN</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <a href="./applicant9.html" target="_blank"><img class="oneplaceimg"
+                            src="https://web-summit-avenger.imgix.net/production/avatars/original/9b1ccf700b8632d9280a8c60e4d9d22e0813a4c1.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
+                            alt=""></a>
+                    <p class="h2">Ali Niknam</p>
+                    <p>Founder & CEO</p>
+                    <p>bunq</p>
+                    <div class="box4">
+                        <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
+                        <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <iframe style="border-radius: 30px; display:block; margin: auto; margin-bottom: 50px;" width="1080" height="400"
+            src="https://www.youtube.com/embed/lj2x7cyQrX4?si=th3yCcxMgu-R-8DE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <div class="container">
+            <div style="display: flex; justify-content: center; margin-bottom: 40px; margin-top: 100px;">
+                <div><img id="thirdimg"
+                        src="https://websummit.com/wp-media/2024/03/Web-Summit-centre-stage-with-crowd.png" alt="">
+                </div>
+                <div id="thirddiv">
+                    <p style="font-size: 35px; margin-top: 60px; margin-left: 40px; font-weight: 600;">“It defines the
+                        ecosystem.”</p>
+                    <p style="margin-left: 40px; margin-top: 20px; font-size: 19px;">The Guardian</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="fifth">
+                <div style="background-color: rgb(0,132,132); width: 496px; height: auto; border-radius: 5px;">
+                    <img style="width: 100%; height: 300px; border-top-left-radius: 5px;border-top-right-radius: 5px;"
+                        src="https://websummit.com/wp-media/2023/07/Ayo-Tometti-Co-founder-Black-Lives-Matter-on-Centre-Stage-e1690393310785.jpg"
+                        alt="">
+                    <p class="newsp">“The giants of the web assemble.”</p>
+                    <p class="newsp2">Wall Street Journal</p>
+                </div>
+                <div style="background-color: rgb(101,77,160); width: 496px; height: auto;border-radius: 5px;">
+                    <img style="width: 100%; height: 300px; border-top-left-radius: 5px;border-top-right-radius: 5px;"
+                        src="https://websummit.com/wp-media/2024/03/Startup-presenting-on-Pitch-stage-at-Web-Summit.png"
+                        alt="">
+                    <p class="newsp">“Europe’s biggest tech conference.”</p>
+                    <p class="newsp2">Reuters</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: rgb(12,20,57);">
+        <div class="container">
+            <div id="sixth">
+                <div>
+                    <p id="input3">Download the Tech Conference overview</p>
+                </div>
+                <div>
+                    <input type="text" name="input1" id="input1" placeholder="user@example.com" required>
+                    <input type="text" name="input2" id="input2" placeholder="First name" required>
+                    <button>
+                        <span>Download Overview</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <main>
+        <div class="container">
+            <h1>RELATED POSTS</h1>
+        </div>
+        <div id="mainflex" class="container">
+            <div class="card">
+                <img class="img3"
+                    src="https://godreamcast.com/blog/wp-content/uploads/2024/04/Thumbnail-MICE-events.jpg" alt="">
+                <p class="boxp">News & Update</p>
+                <p>Upcoming MICE Events 2024: The Next-Gen of Events and Confrences</p>
+            </div>
+            <div class="card">
+                <img class="img3" src="https://godreamcast.com/blog/wp-content/uploads/2024/03/Thumbnail-13.jpg" alt="">
+                <p class="boxp">News & Update</p>
+                <p>Upcoming World-Wide Pharmaceutical Conferences and Events in 2024</p>
+            </div>
+            <div class="card">
+                <img class="img3" src="https://godreamcast.com/blog/wp-content/uploads/2024/03/Thumbnail-5.jpg" alt="">
+                <p class="boxp">News & Update</p>
+                <p>Explore Upcoming Real Estate Expos, Trade Shows, and Conferences in Dubai &...</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div id="bgcolor">
+                <div id="flex">
+                    <div>
+                        <img id="img" src="./Apple.png" alt="logo">
+                        <p id="firstp">Your Event Tech Partner Developing Technology To Meet All Your Event Needs.</p>
+                        <div>
+                            <img src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/iso-img.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="fonts">
+                        <h3>Products</h3>
+                        <div>Webinar+</div>
+                        <div>Mixhub</div>
+                        <div>Cashless</div>
+                        <div>Mindmixer</div>
+                    </div>
+                    <div class="fonts">
+                        <h3>Solutions</h3>
+                        <div>Virtual Event</div>
+                        <div>Hybrid Event</div>
+                        <div>Live Streaming</div>
+                        <div>In-person event</div>
+                        <div>Smart Event Solution</div>
+                        <div>Whatsapp Automation</div>
+                    </div>
+                    <div class="fonts">
+                        <h3>Resources</h3>
+                        <div>Blog</div>
+                        <div>Success Story</div>
+                        <div>E-Book</div>
+                        <div>Support</div>
+                    </div>
+                    <div class="fonts">
+                        <h3>Company</h3>
+                        <div>About us</div>
+                        <div>Career</div>
+                        <div>Contact us</div>
+                    </div>
+                    <div class="fonts">
+                        <h3>Connect With Us</h3>
+                        <div>Book A Demo</div>
+                        <div>contact@godreamcast.com</div>
+                    </div>
+                </div>
+                <div id="line2"></div>
+                <div id="flex2">
+                    <div>©2024, Applecast Inc. All Rights Reserved.</div>
+                    <div id="flex4">
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookie Policy</p>
+                        <p>Refund Policy</p>
+                        <p>GDPR</p>
+                    </div>
+                    <div id="flex3">
+                        <div><img class="img2"
+                                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/footer-icon.svg"
+                                alt=""></div>
+                        <div><img class="img2"
+                                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/twitter-icon.svg"
+                                alt=""></div>
+                        <div><img class="img2"
+                                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/insta-icon.svg"
+                                alt=""></div>
+                        <div><img class="img2"
+                                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/linkdin-icon.svg"
+                                alt=""></div>
+                        <div><img class="img2"
+                                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/youtube-icon.svg"
+                                alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
